@@ -1,0 +1,181 @@
+@font-face{
+    font-family: 'Magra';
+    src:local('Magra'),url('fonts/Magra-Bold.ttf')}
+
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 99%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 8px 8px 25px 8px;
+    background: #fbe1ca;
+    box-shadow: 0px 4px 4px rgba(212, 105, 15, 0.5);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0%;
+    background: rgba(251, 225, 202, .65);
+}
+
+main{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    background: #f29546;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nameSite{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: 'Magra', sans-serif;
+    font-size: 75px;
+    margin: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #f29546;
+}
+
+.helpText{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: 'Magra', sans-serif;
+    font-size: 25px;
+    margin: 0%;
+    width: 100%;
+    color:#f29546;
+}
+
+.mainWindow{
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgHint{
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+.inputNum{
+    display: flex;
+    position: relative;
+    width: 100%;
+    outline: none;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 16px;
+    border-color: #f29546;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(212, 105, 15, 0.5);
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.buttonConvert{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 35px;
+    margin: 15px;
+    background-color: #f5b781;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 16px;
+    border-color: #f29546;
+}
+
+.buttonConvert:hover{
+    box-shadow: 0px 6px 6px rgba(212, 105, 15, 0.5);
+    transition: 0.3s;
+}
+
+.buttonConvert:active{
+    transform: translateY(4px);
+    transition: 0.1s;
+}
+
+.changeNumber{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 35px;
+    margin: 15px;
+    background-color: #f5b781;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 16px;
+    border-color: #f29546;
+}
+
+.changeNumber:hover{
+    box-shadow: 0px 6px 6px rgba(212, 105, 15, 0.5);
+    transition: 0.3s;
+}
+
+.changeNumber:active{
+    transform: translateY(4px);
+    transition: 0.1s;
+}
+
+.empty{
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+.wrapper{
+    flex-grow: 1;
+}
+
+.logo{
+    width: 4%;
+    min-width: 55px;
+    margin-left: 1%;
+}
+
+.links{
+    display: flex;
+    justify-content: end;
+    margin-right: 2%;
+}
+
+.gitHub{
+    width: 6%;
+    min-width: 35px;
+}
+
+.gitLink{
+    width: 4%;
+}
