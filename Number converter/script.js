@@ -51,8 +51,7 @@ function convertPlus (value1){
         }
     }
 
-let array = [];
-
+//конвертирование сотен
 function hundreds (i){
     if(i == 9){
         result = result + 'CM'
@@ -75,6 +74,7 @@ function hundreds (i){
     }
 }
 
+// конвертирование десятых
 function tenths (i) {
     if(i == 9){
         result = result + 'XC'
@@ -96,6 +96,8 @@ function tenths (i) {
         result = result +'X'
     }
 }
+
+// конвертирование единиц
 function units (i){
     if(i == 9){
         result = result + 'IX'
@@ -118,7 +120,7 @@ function units (i){
     }
 }
 
-    let lengthNumber = 0; // используется для конвертирования из арабских в римские
+let lengthNumber = 0; // используется для конвертирования из арабских в римские
 
     // конвертирование                   Корректно работает с правильными числами
 convertButton.addEventListener("click", () => {
