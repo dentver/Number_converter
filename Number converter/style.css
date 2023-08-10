@@ -86,7 +86,8 @@ footer{
     outline: none;
     font-size: 24px;
     font-weight: 600;
-    border-radius: 16px;
+    border-radius: 16px; 
+    /* border-style: solid; чтобы рамка была одного цвета */
     border-color: #f29546;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(212, 105, 15, 0.5);

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -17,10 +16,6 @@
             <img class="imgHint" src="image/licensed-image.jpg" alt="hint for numbers">
             <div class="mainWindow">
                 <input type="text" class="inputNum" value="" placeholder="Roman (I, V, X, L, C, D, M)">
-                    <script>
-                        inputNum.oninput = function() {
-                            this.value = this.value.replace(/[^IVXLCM]/g, '') };
-                    </script>
                 <div class="buttons">
                     <button class="buttonConvert">Convert</button>
                     <button class="changeNumber">⇋</button>
@@ -38,5 +33,6 @@
             </a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
