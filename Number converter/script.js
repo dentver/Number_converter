@@ -4,7 +4,7 @@ const changeNumber = document.querySelector('.changeNumber');
 
 let numberValue = ''; // число из input
 
-let result = 0; // результат
+let result = ''; // результат
 
 let numLanguage = 'roman'; // переменная для смены римской и арабской системы счисления
 
@@ -19,35 +19,35 @@ input.oninput = function() {
 
 function convertMinus (value1, value2) {
         if(value1 == 'C' && value2 == 'M'){
-                result = result  + 900;
+                result = Number(result)  + 900;
         } else if (value1 == 'C' && value2 == 'D'){
-                result = result  + 400;
+                result = Number(result)  + 400;
         } else if (value1 == 'X' && value2 == 'C') {
-                result = result  + 90;
+                result = Number(result)  + 90;
         } else if (value1 == 'X' && value2 == 'L') {
-                result = result  + 40;
+                result = Number(result)  + 40;
         } else if (value1 == 'I' && value2 == 'X') {
-                result = result  + 9;
+                result = Number(result)  + 9;
         } else if (value1 == 'I' && value2 == 'V') {
-                result = result  + 4;
+                result = Number(result)  + 4;
         }
     }
 
 function convertPlus (value1){
         if(value1 == 'M'){
-            result = result  + 1000;
+            result = Number(result)  + 1000;
         } else if (value1 == 'D') {
-            result = result  + 500;
+            result = Number(result)  + 500;
         } else if (value1 == 'C') {
-            result = result  + 100;
+            result = Number(result)  + 100;
         } else if (value1 == 'L') {
-            result = result  + 50;
+            result = Number(result)  + 50;
         } else if (value1 == 'X') {
-            result = result  + 10;
+            result = Number(result)  + 10;
         } else if (value1 == 'V') {
-            result = result  + 5;
+            result = Number(result)  + 5;
         } else if (value1 == 'I') {
-            result = result  + 1;
+            result = Number(result)  + 1;
         }
     }
 
@@ -62,7 +62,7 @@ function hundreds (i){
     } else if(i == 6){
         result = result + 'DC'
     } else if(i == 5){
-        result = result = 'D'
+        result = result + 'D'
     } else if(i == 4){
         result = result + 'CD'
     } else if(i == 3){
@@ -85,7 +85,7 @@ function tenths (i) {
     } else if(i == 6){
         result = result + 'LX'
     } else if(i == 5){
-        result = result = 'L'
+        result = result + 'L'
     } else if(i == 4){
         result = result + 'XL'
     } else if(i == 3){
@@ -108,7 +108,7 @@ function units (i){
     } else if(i == 6){
         result = result + 'VI'
     } else if(i == 5){
-        result = result = 'V'
+        result = result + 'V'
     } else if(i == 4){
         result = result + 'IV'
     } else if(i == 3){
@@ -138,7 +138,7 @@ convertButton.addEventListener("click", () => {
             }
         }
     input.value = result;
-    result = 0;
+    result = '';
     } else if (numLanguage == 'arabic'){
         let numberValue = document.getElementsByTagName("input")[0].value;
         if (numberValue > 3999){
@@ -162,7 +162,7 @@ convertButton.addEventListener("click", () => {
             units(array[0]);
         }
         input.value = result
-        result = 0;
+        result = '';
     }}})
 
 
